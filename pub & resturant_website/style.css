@@ -1,0 +1,158 @@
+/* ======================
+   Madisha's Pub & Restaurant Styles
+   ====================== */
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #111;
+  color: #fff;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  margin: 0 0 15px;
+  font-weight: 700;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 22px;
+  font-weight: 800;
+  color: #f39c12;
+}
+
+nav .links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+nav .links a:hover {
+  color: #f39c12;
+}
+
+/* Hero Section */
+header {
+  height: 100vh;
+  background: url('pub-bg.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+header .hero-content h1 {
+  font-size: 48px;
+  color: #f39c12;
+}
+
+header .btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #f39c12;
+  color: #000;
+  border-radius: 30px;
+  font-weight: 600;
+  margin-top: 20px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+header .btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* Services */
+.services .cards, .menu .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #222;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: #333;
+}
+
+/* Events */
+.events ul {
+  list-style: none;
+  padding: 0;
+}
+
+.events li {
+  background: #222;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 500px;
+}
+
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Contact */
+.contact p {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+  color: #aaa;
+}
